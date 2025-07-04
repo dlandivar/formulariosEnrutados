@@ -9,12 +9,17 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './formulario-normal.css'
 })
 export class FormularioNormal {
-/*nombre:string='';
+nombre:string='';
 nombres:string[]=[];
 agregarNombre() {
   if (this.nombre.trim() !== '') {
     this.nombres.push(this.nombre.trim());
     this.nombre = '';
+    console.log(this.nombres);
   }
-}*/
+
+
+
+  
+}
 }
