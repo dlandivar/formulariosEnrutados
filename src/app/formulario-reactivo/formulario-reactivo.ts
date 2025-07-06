@@ -8,12 +8,14 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators} from '@angular
   templateUrl: './formulario-reactivo.html',
   styleUrl: './formulario-reactivo.css'
 })
+
+
+
 export class FormularioReactivo {
   profileForm = new FormGroup({
   email: new FormControl('', [Validators.required, Validators.email]),
   });
   emails: string[] = [];
-
 
 
   handleSubmit() {

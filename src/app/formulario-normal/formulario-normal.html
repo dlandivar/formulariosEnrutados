@@ -1,8 +1,15 @@
 <form (ngSubmit)="agregarNombre()" #miForm="ngForm">
-    <label >Nombre:
-<input type="text" name="nombre" [(ngModel)]="nombre" required>
+    <label>Nombre:
+        <input type="text" name="nombre" [(ngModel)]="nombre" required>
 
     </label>
     <input type="submit" value="Enviar" [disabled]="miForm.invalid">
-
+    
+    @for(item of nombres; track item){
+    <ul>
+        <li>
+            <span class="id-estilo">{{item}} </span>
+        </li>
+    </ul>
+    }
 </form>

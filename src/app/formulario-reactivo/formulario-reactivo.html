@@ -4,12 +4,14 @@
     Email
     <input type="email" formControlName="email" />
   </label>
-  <button type="submit" [disabled]="!profileForm.valid" class="espaciado" >Submit</button>
+  <button type="submit" [disabled]="!profileForm.valid" class="espaciado">Submit</button>
 
 
   @for(item of emails; track item){
   <ul>
-    <span class="id-estilo">{{item}} </span>
+    <li>
+      <span class="id-estilo">{{item}} </span>
+    </li>
   </ul>
   }
 
