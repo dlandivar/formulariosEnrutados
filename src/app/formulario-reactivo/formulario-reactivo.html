@@ -1,0 +1,16 @@
+<form [formGroup]="profileForm" (ngSubmit)="handleSubmit()">
+  
+  <label>
+    Email
+    <input type="email" formControlName="email" />
+  </label>
+  <button type="submit"  [disabled]="!profileForm.valid">Submit</button>
+
+
+  @for(item of emails; track item){
+    <ul>
+        <li>{{item}}</li>
+    </ul>
+}
+
+</form>
