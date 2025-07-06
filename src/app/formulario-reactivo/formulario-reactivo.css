@@ -1,0 +1,21 @@
+.espaciado {
+  margin-left: 16px; 
+}
+
+.boton-agregar {
+  background-color: darksalmon;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.boton-agregar:hover {
+  background-color: darkolivegreen;
+}
+
+.id-estilo {
+  color: red;
+  font-weight: bold;
+}

@@ -21,6 +21,7 @@ export class FormularioReactivo {
       alert('El campo de correo electrónico no puede estar vacío.');
     } else {
       this.emails.push(this.profileForm.value.email!.trim());
+      this.profileForm.reset();
     }
 
   }
